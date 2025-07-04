@@ -7,5 +7,8 @@ module com.example.estudosjavafx {
     requires org.kordamp.bootstrapfx.core;
 
     //opens com.example.estudosjavafx to javafx.fxml;
+    opens aula03 to javafx.fxml;
     exports aula01;
+    exports aula02;
+    exports aula03;
 }

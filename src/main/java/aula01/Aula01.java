@@ -18,10 +18,10 @@ public class Aula01 extends Application {
     @Override
     public void start(Stage tela1) throws Exception {
         //o Stage é o que serve como a janela, o palco para os outros elementos da interface
-        //Stage tela2 = new Stage(); é a maneira de criar outra tela ou palco
+        Stage tela2 = new Stage(); // é a maneira de criar outra tela ou palco
 
         Group root = new Group(); //contâiner que organiza os elementos da interface
-        Scene cena1 = new Scene(root, Color.GRAY);  //adiciona o grupo na cena
+        Scene cena1 = new Scene(root, Color.GRAY);  //Cria uma aba com o grupo root
         //Color é uma classe estática com constantes de cores
         tela1.setTitle("Tela inicial"); //define o título da janela da aplicação
         tela1.setScene(cena1);  //adiciona a cena na tela
@@ -37,6 +37,11 @@ public class Aula01 extends Application {
         tela1.setFullScreenExitKeyCombination(KeyCombination.valueOf("q")); //muda a tecla padrão para sair da tela cheia
         tela1.setFullScreenExitHint("Pressione q para sair"); //altera a mensagem de dica da tela cheia, se tiver vazio nada é mostrado
 
+        tela2.show();
         tela1.show(); //show mostra a tela fazendo sua visibilidade ser true
+
+        //Stage -> Janela
+        //Scene -> Aba
+        //Grouṕ -> Organiza os elementos
     }
 }
