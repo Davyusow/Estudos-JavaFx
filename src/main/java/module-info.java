@@ -6,6 +6,6 @@ module com.example.estudosjavafx {
     requires com.dlsc.formsfx;
     requires org.kordamp.bootstrapfx.core;
 
-    opens com.example.estudosjavafx to javafx.fxml;
-    exports com.example.estudosjavafx;
+    //opens com.example.estudosjavafx to javafx.fxml;
+    exports aula01;
 }
