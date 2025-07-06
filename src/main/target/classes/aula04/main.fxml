@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aula04.Controlador">
+   <children>
+      <Button layoutX="272.0" layoutY="14.0" mnemonicParsing="false" onAction="#cima" text="Cima" />
+      <Button layoutX="272.0" layoutY="362.0" mnemonicParsing="false" onAction="#baixo" text="Baixo" />
+      <Button layoutX="14.0" layoutY="188.0" mnemonicParsing="false" onAction="#esquerda" text="Esquerda" />
+      <Button layoutX="530.0" layoutY="200.0" mnemonicParsing="false" onAction="#direita" text="Direita" />
+      <Circle fx:id="meuCirculo" fill="DODGERBLUE" layoutX="297.0" layoutY="188.0" radius="64.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>
