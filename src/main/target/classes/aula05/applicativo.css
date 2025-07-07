@@ -1,0 +1,14 @@
+.root{
+    -fx-background-color: #444444;
+}
+
+.label{
+    -fx-font-size: 20;
+    -fx-font-family: "DejaVu Sans";
+    -fx-text-fill: "white";
+    -fx-alignment: center;
+}
+
+#titulo{
+    -fx-font-size: 42;
+}

@@ -9,8 +9,10 @@ module com.example.estudosjavafx {
     //opens com.example.estudosjavafx to javafx.fxml;
     opens aula03 to javafx.fxml;
     opens aula04 to javafx.fxml;
+    opens aula05 to javafx.fxml;
     exports aula01;
     exports aula02;
     exports aula03;
     exports aula04;
+    exports aula05;
 }

@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 public class Aula04 extends Application {
     @Override
     public void start(Stage tela1) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("main2.fxml"));
         Scene aba1 = new Scene(root);
 
         tela1.setScene(aba1);
