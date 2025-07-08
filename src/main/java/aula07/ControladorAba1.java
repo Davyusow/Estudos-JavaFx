@@ -19,20 +19,21 @@ public class ControladorAba1 {
     private Parent grupo;
 
     public void login(ActionEvent evento) throws IOException {
-
         String usuario = campoNome.getText(); //recebe o nome no campo de texto quando o botão for pressionado
-        FXMLLoader loader = FXMLLoader.load(getClass().getResource("main2.fxml"));
+        
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("main2.fxml"));
         grupo = loader.load();
         ControladorAba2 controladorAba2 = loader.getController();
         controladorAba2.mostraNome(usuario);
-        trocoAba2(evento);
-    }
-    public void trocoAba2(ActionEvent evento) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("main2.fxml"));
         janela = (Stage) ((Node)evento.getSource()).getScene().getWindow();
-        aba = new Scene(root);
-        janela.setScene(aba);
-        janela.show();
+        janela.setScene(new Scene(grupo));
     }
+    // public void trocoAba2(ActionEvent evento) throws IOException {
+    //     Parent root = FXMLLoader.load(getClass().getResource("main2.fxml"));
+    //     janela = (Stage) ((Node)evento.getSource()).getScene().getWindow();
+    //     aba = new Scene(root);
+    //     janela.setScene(aba);
+    //     janela.show();
+    // }
 
 }
